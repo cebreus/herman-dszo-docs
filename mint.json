@@ -1,78 +1,112 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "DSZO e-shop",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
+    "primary": "#15a4a6",
     "light": "#07C983",
-    "dark": "#0D9373",
+    "dark": "#15a4a6",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#22c55e",
+      "to": "#16a34a"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
+  "topbarLinks": [{
+    "name": "Support",
+    "url": "mailto:jarda@nomodo.io"
+  }],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://demo-deploy.nomodo.io/login"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
-    },
-    {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
+  "tabs": [{
+    "name": "API Reference",
+    "url": "api-reference"
+  }],
+  "anchors": [{
+    "name": "Community",
+    "icon": "discord",
+    "url": "https://discord.gg/eycYCn5tkZ"
+  }],
+  "navigation": [{
       "group": "API Documentation",
       "pages": ["api-reference/introduction"]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Registration",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/registration/registrace",
+        "api-reference/registration/🧰-check-email-existence",
+        "api-reference/registration/🧰-send-verification-email"
+      ]
+    }, {
+      "group": "Users",
+      "pages": [
+        "api-reference/users/seznam-uživatelů",
+        "api-reference/users/vložit-uživatele",
+        "api-reference/users/detail-uživatele",
+        "api-reference/users/upravit-uživatele-uc89",
+        "api-reference/users/seznam-podúčtů",
+        "api-reference/users/detail-podúčtu",
+        "api-reference/users/upravit-podúčet",
+        "api-reference/users/zaslat-zapomenuté-heslo"
+      ]
+    }, {
+      "group": "Roles",
+      "pages": [
+        "api-reference/roles/vložit-podúčet",
+        "api-reference/roles/seznam-rolí",
+        "api-reference/roles/vložit-roli",
+        "api-reference/roles/detail-role",
+        "api-reference/roles/upravit-roli"
+      ]
+    }, {
+      "group": "Rides",
+      "pages": [
+        "api-reference/rides/tisk-dokladu",
+        "api-reference/rides/historie-jízd"
+      ]
+    },
+    {
+      "group": "User request",
+      "pages": [
+        "api-reference/user-request/seznam-všech-požadavků",
+        "api-reference/user-request/detail-požadavku",
+        "api-reference/user-request/reakce-na-požadavek",
+        "api-reference/user-request/žádost-o-změnu-údajů",
+        "api-reference/user-request/žádost-o-slevu",
+        "api-reference/user-request/vložit-obecný-požadavek",
+        "api-reference/user-request/vložit-reklamaci-uc5"
+      ]
+    }, {
+      "group": "Carriers",
+      "pages": [
+        "api-reference/carriers/seznam-identifikátorů",
+        "api-reference/carriers/detail-identifikátoru-karta",
+        "api-reference/carriers/upravit-identifikátor-karta",
+        "api-reference/carriers/vložit-identifikátor-klíčenka",
+        "api-reference/carriers/detail-identifikátoru-klíčenka",
+        "api-reference/carriers/upravit-identifikátor-klíčenka"
+      ]
+    }, {
+      "group": "TicketInspections",
+      "pages": [
+        "api-reference/ticketinspections/seznam-revizí"
+      ]
+    }, {
+      "group": "Tickets",
+      "pages": [
+        "api-reference/tickets/moje-kupony"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "facebook": "https://www.facebook.com/profile.php?id=100092461303397",
+    "discord": "https://discord.gg/eycYCn5tkZ",
+    "linkedin": "https://www.linkedin.com/company/nomodo"
   }
 }
